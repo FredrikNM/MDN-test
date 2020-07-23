@@ -5,7 +5,7 @@ This was a test of inferpy, and a MDN, and an issue I didnt know how to fix at t
 Issue that occured : The posterior_predictive and VI.fit need same amout of data (The train and test set
 need to have same numbers of examples).
 For now they havent fixed this issue, but if the size is not the same, they gave a smart quickfix 
-by adding "random" numbers to test so the dimensions are equal to the train set:
+by adding "random" numbers to the test set so the dimensions are equal to the train set:
 
 ```
 padded_x_test = x_train

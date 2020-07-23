@@ -1,9 +1,11 @@
 # MDN-test
 
-test of inferpy, MDN, and an issue I dont know how to fix
+This was a test of inferpy, and a MDN, and an issue I didnt know how to fix at the time
 
-Issue that occured : why do the posterior_predictive and VI.fit need same amout of data. 
-For now they havent fixed this issue, but if the size is not the same, add random numbers to test:
+Issue that occured : The posterior_predictive and VI.fit need same amout of data (The train and test set
+need to have same numbers of examples).
+For now they havent fixed this issue, but if the size is not the same, they gave a smart quickfix 
+by adding "random" numbers to test so the dimensions are equal to the train set:
 
 ```
 padded_x_test = x_train
